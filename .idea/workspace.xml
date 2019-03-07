@@ -5,9 +5,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/PT.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PT.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chart3compare/generate_chart.py" beforeDir="false" afterPath="$PROJECT_DIR$/chart3compare/generate_chart.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perTest/CPU_20190228173521.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/perTest/calCPU.py" beforeDir="false" afterPath="$PROJECT_DIR$/perTest/calCPU.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/perTest/声网cpu.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/perTest/游密cpu.csv" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -84,6 +84,34 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-191420227">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="368" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="368" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="csv" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="PLAIN_TEXT" value="3" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -99,11 +127,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/perTest/calCPU.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="133" column="14" lean-forward="true" selection-start-line="133" selection-start-column="14" selection-end-line="133" selection-end-column="14" />
+            <state relative-caret-position="1150">
+              <caret line="149" column="17" selection-start-line="149" selection-start-column="17" selection-end-line="149" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -111,7 +139,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chart/generate_chart.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
+            <state relative-caret-position="2116">
               <caret line="94" column="62" selection-start-line="94" selection-start-column="62" selection-end-line="94" selection-end-column="62" />
               <folding>
                 <element signature="e#37#53#0" expanded="true" />
@@ -120,11 +148,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/chart3compare/generate_chart.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="148" column="42" lean-forward="true" selection-start-line="148" selection-start-column="42" selection-end-line="148" selection-end-column="42" />
+            <state relative-caret-position="-211">
+              <caret line="86" column="8" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -158,14 +186,14 @@
         <option value="$PROJECT_DIR$/python_queue/queue.py" />
         <option value="$PROJECT_DIR$/chart/generate_chart.py" />
         <option value="$PROJECT_DIR$/perTest/2222.py" />
-        <option value="$PROJECT_DIR$/chart3compare/generate_chart.py" />
         <option value="$PROJECT_DIR$/perTest/calCPU.py" />
+        <option value="$PROJECT_DIR$/chart3compare/generate_chart.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="113" />
-    <option name="y" value="22" />
+    <option name="x" value="163" />
+    <option name="y" value="73" />
     <option name="width" value="1386" />
     <option name="height" value="788" />
   </component>
@@ -208,7 +236,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -341,15 +369,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="113" y="22" width="1386" height="788" extended-state="0" />
+    <frame x="163" y="73" width="1386" height="788" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48913044" visible="true" weight="0.21735905" />
-      <window_info id="Structure" order="1" sideWeight="0.51086956" side_tool="true" visible="true" weight="0.21735905" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4869565" visible="true" weight="0.21735905" />
+      <window_info id="Structure" order="1" sideWeight="0.51304346" side_tool="true" visible="true" weight="0.21735905" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49947312" visible="true" weight="0.29663607" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32924962" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947312" visible="true" weight="0.29555896" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -367,9 +395,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/1455604862/_collections.py" />
-    <entry file="file://D:/Python/Python37-32/Lib/concurrent/futures/__init__.py" />
-    <entry file="file://D:/Python/Python37-32/Lib/concurrent/futures/thread.py" />
     <entry file="file://D:/Python/Python37-32/Lib/concurrent/futures/_base.py" />
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2and3/threading.pyi">
       <provider selected="true" editor-type-id="text-editor">
@@ -441,6 +466,11 @@
     <entry file="file://D:/Python/Python37-32/Lib/site-packages/pyecharts/charts/line.py" />
     <entry file="file://D:/Python/Python37-32/Lib/asyncio/base_events.py" />
     <entry file="file://D:/Python/Python37-32/Lib/asyncio/tasks.py" />
+    <entry file="file://$PROJECT_DIR$/perTest/声网cpu.csv" />
+    <entry file="file://E:/python/python37/Lib/csv.py" />
+    <entry file="file://$PROJECT_DIR$/perTest/CPU_20190227180511.csv" />
+    <entry file="file://E:/python/python37/Lib/site-packages/pyecharts/__init__.py" />
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/1684089861/builtins.py" />
     <entry file="file://$PROJECT_DIR$/perTest/2222.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -451,30 +481,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/perTest/声网cpu.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://E:/python/python37/Lib/csv.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/perTest/CPU_20190227180511.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4209" />
-      </provider>
-    </entry>
-    <entry file="file://E:/python/python37/Lib/site-packages/pyecharts/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#31#85#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chart/generate_chart.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
+        <state relative-caret-position="2116">
           <caret line="94" column="62" selection-start-line="94" selection-start-column="62" selection-end-line="94" selection-end-column="62" />
           <folding>
             <element signature="e#37#53#0" expanded="true" />
@@ -482,24 +491,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/1684089861/builtins.py">
+    <entry file="file://$PROJECT_DIR$/perTest/CPU_20190228173521.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/perTest/CPU_20190301113727.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/perTest/CPU_20190301111732.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/perTest/calCPU.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="2377" column="8" selection-start-line="2377" selection-start-column="8" selection-end-line="2377" selection-end-column="8" />
+        <state relative-caret-position="1150">
+          <caret line="149" column="17" selection-start-line="149" selection-start-column="17" selection-end-line="149" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chart3compare/generate_chart.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="148" column="42" lean-forward="true" selection-start-line="148" selection-start-column="42" selection-end-line="148" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/perTest/calCPU.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="133" column="14" lean-forward="true" selection-start-line="133" selection-start-column="14" selection-end-line="133" selection-end-column="14" />
+        <state relative-caret-position="-211">
+          <caret line="86" column="8" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
         </state>
       </provider>
     </entry>

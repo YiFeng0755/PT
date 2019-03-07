@@ -31,7 +31,7 @@ def cpuChart(ymCpuPath,qqCpuPath,xyCpuPath):
     cpuLine.add("游密", [x for x in range(len(ymCpu))], ymCpu, is_more_utils=True)  # 标题
     cpuLine.add("qq", [x for x in range(len(qqCpu))], qqCpu, is_more_utils=True)  # 标题
     cpuLine.add("小鱼", [x for x in range(len(xyCpu))], xyCpu, is_more_utils=True)  # 标题
-    cpuLine.show_config()  # 展示HTML源代码
+    # cpuLine.show_config()  # 展示HTML源代码
     cpuLine.render("cpu.html")
 
 def memData(filePath):#返回内存数据列表
@@ -44,14 +44,14 @@ def memData(filePath):#返回内存数据列表
     return l
 
 def memChart(ymMemPath,qqMemPath,xyMemPath):
-    memLine = pyecharts.Line("游密、qq、小鱼性能对比", "内存(Mb)")
+    memLine = pyecharts.Line("游密、qq、小鱼性能对比", "内存(MB)")
     ymMem = memData(ymMemPath)
     qqMem = memData(qqMemPath)
     xyMem = memData(xyMemPath)
     memLine.add("游密", [x for x in range(len(ymMem))], ymMem, is_more_utils=True)  # 标题
     memLine.add("qq", [x for x in range(len(qqMem))], qqMem, is_more_utils=True)  # 标题
     memLine.add("小鱼", [x for x in range(len(xyMem))], xyMem, is_more_utils=True)  # 标题
-    memLine.show_config()  # 展示HTML源代码
+    # memLine.show_config()  # 展示HTML源代码
     memLine.render("mem.html")
 
 def curData(filePath):#返回电流数据列表
@@ -71,38 +71,59 @@ def curChart(ymCurPath,qqCurPath,xyCurPath):
     curLine.add("游密", [x for x in range(len(ymCur))], ymCur, is_more_utils=True)  # 标题
     curLine.add("qq", [x for x in range(len(qqCur))], qqCur, is_more_utils=True)  # 标题
     curLine.add("xy", [x for x in range(len(xyCur))], xyCur, is_more_utils=True)  # 标题
-    curLine.show_config()  # 展示HTML源代码
+    # curLine.show_config()  # 展示HTML源代码
     curLine.render("cur.html")
 
 def netData(filePath):#返回流量数据列表
     with open(filePath,"rt")as csvfile:
         reader = csv.reader(csvfile)
         column = [row for row in reader]
-    print(column)
+    # print(column)
     ltran = []#上行流量
     lrec = []#下行流量
+    brtran = []#上行码率
+    brrec = []#下行码率
     for i in range(12, len(column) - 1):
         ltran.append(column[i][1])
         lrec.append(column[i][2])
-    return ltran,lrec
+        if i<len(column) - 2:
+            brtran.append(int(column[i+1][1])-int(column[i][1]))
+            brrec.append(int(column[i + 1][2]) - int(column[i][2]))
+    return ltran,lrec,brtran,brrec
 
 def netChart(ymNetPath,qqNetPath,xyNetPath):
     transLine = pyecharts.Line("游密、qq、小鱼性能对比", "transmit流量(KB)")
     recLine = pyecharts.Line("游密、qq、小鱼性能对比", "receive流量(KB)")
-    ymTran,ymRec= netData(ymNetPath)
-    qqTran,qqRec = netData(qqNetPath)
-    xyTran,xyRec = netData(xyNetPath)
+    ymTran,ymRec,ymbtran,ymbrec= netData(ymNetPath)
+    qqTran,qqRec,qqbtran,qqbrec = netData(qqNetPath)
+    xyTran,xyRec,xybtran,xybrec = netData(xyNetPath)
     transLine.add("游密", [x for x in range(len(ymTran))], ymTran, is_more_utils=True)  # 标题
     transLine.add("qq", [x for x in range(len(qqTran))], qqTran, is_more_utils=True)  # 标题
     transLine.add("小鱼", [x for x in range(len(xyTran))], xyTran, is_more_utils=True)  # 标题
-    transLine.show_config()  # 展示HTML源代码
+    # transLine.show_config()  # 展示HTML源代码
     transLine.render("Net_trans.html")
 
     recLine.add("游密", [x for x in range(len(ymRec))], ymRec, is_more_utils=True)  # 标题
     recLine.add("qq", [x for x in range(len(qqRec))], qqRec, is_more_utils=True)  # 标题
     recLine.add("小鱼", [x for x in range(len(xyRec))], xyRec, is_more_utils=True)  # 标题
-    recLine.show_config()  # 展示HTML源代码
+    # recLine.show_config()  # 展示HTML源代码
     recLine.render("Net_rec.html")
+
+    btranLine = pyecharts.Line("游密、qq、小鱼性能对比", "上行带宽码率(KB/s)")
+    brecLine = pyecharts.Line("游密、qq、小鱼性能对比", "下行带宽码率(KB/s)")
+    btranLine.add("游密", [x for x in range(len(ymbtran))], ymbtran, is_more_utils=True)  # 标题
+    btranLine.add("qq", [x for x in range(len(qqbtran))], qqbtran, is_more_utils=True)  # 标题
+    btranLine.add("小鱼", [x for x in range(len(xybtran))], xybtran, is_more_utils=True)  # 标题
+    # btranLine.show_config()  # 展示HTML源代码
+    btranLine.render("br_trans.html")
+
+    brecLine.add("游密", [x for x in range(len(ymbrec))], ymbrec, is_more_utils=True)  # 标题
+    brecLine.add("qq", [x for x in range(len(qqbrec))], qqbrec, is_more_utils=True)  # 标题
+    brecLine.add("小鱼", [x for x in range(len(xybrec))], xybrec, is_more_utils=True)  # 标题
+    # brecLine.show_config()  # 展示HTML源代码
+    brecLine.render("br_rec.html")
+
+
 
 def volData(filePath):#返回电压数据列表
     with open(filePath,"rt")as csvfile:
@@ -121,11 +142,11 @@ def volChart(ymVolPath,qqVolPath,xyVolPath):
     volLine.add("游密", [x for x in range(len(ymVol))], ymVol, is_more_utils=True)  # 标题
     volLine.add("qq", [x for x in range(len(qqVol))], qqVol, is_more_utils=True)  # 标题
     volLine.add("小鱼", [x for x in range(len(xyVol))], xyVol, is_more_utils=True)  # 标题
-    volLine.show_config()  # 展示HTML源代码
+    # volLine.show_config()  # 展示HTML源代码
     volLine.render("vol.html")
 
 def genPath(CpuPath):
-    filePath = ymCpuPath.replace(ymCpuPath.split(os.sep)[-1], "")
+    filePath = CpuPath.replace(CpuPath.split(os.sep)[-1], "")
 
     # 获取内存数据文件路径
     MemCmd = 'dir {} |find "{}"|gawk "{}"'.format(filePath,"Ps","NR==1{print $4}")
@@ -155,11 +176,11 @@ if __name__ == "__main__":
     ymMemPath,ymCurPath,ymNetPath,ymVolPath = genPath(ymCpuPath)
     qqMemPath,qqCurPath,qqNetPath,qqVolPath = genPath(qqCpuPath)
     xyMemPath,xyCurPath,xyNetPath,xyVolPath = genPath(xyCpuPath)
-    cpuChart(ymCpuPath,qqCpuPath,xyCpuPath)
-    memChart(ymMemPath,qqMemPath,xyMemPath)
-    curChart(ymCurPath,qqCurPath,xyCurPath)
+    # cpuChart(ymCpuPath,qqCpuPath,xyCpuPath)
+    # memChart(ymMemPath,qqMemPath,xyMemPath)
+    # curChart(ymCurPath,qqCurPath,xyCurPath)
     netChart(ymNetPath,qqNetPath,xyNetPath)
-    volChart(ymVolPath,qqVolPath,xyVolPath)
+    # volChart(ymVolPath,qqVolPath,xyVolPath)
     # filePath = "D:\PycharmProjects\\PT\perTest\CPU_20190202213507.csv"
     # filePath2 = "D:\ChromeDownloads\GW\im.youme.talk.sample\\1.0\\123\CPU_20190125201625.csv"
     # cpuData(filePath)

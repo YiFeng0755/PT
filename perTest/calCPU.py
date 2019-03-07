@@ -3,7 +3,7 @@
 import os,re,time,csv
 
 def pID(pkgName):
-    cmd = 'adb shell ps -A|findstr "{}"'.format(pkgName)
+    cmd = 'adb shell ps -A|findstr "{}$"'.format(pkgName)
     out = os.popen(cmd).read()
     ol=re.split("\s+",out)
     pid =ol[1]
@@ -143,8 +143,8 @@ if __name__ == "__main__":
     # dataLen()
     # initCsvFile()
     # datalist = startSample(pkgName="im.youme.video.sample2")
-    datalist = startSample(pkgName="com.tencent.mobileqq")
-    # datalist = startSample(pkgName="com.ainemo.dragoon")
+    # datalist = startSample(pkgName="com.tencent.mobileqq:video")
+    datalist = startSample(pkgName="com.ainemo.dragoon")
     filePath = initCsvFile()
     print(filePath)
     time.sleep(2)

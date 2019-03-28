@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0fdf025-0f60-424c-a143-4d9b49c45f3a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/PT.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PT.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chart3compare/Net_rec.html" beforeDir="false" afterPath="$PROJECT_DIR$/chart3compare/Net_rec.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chart3compare/Net_trans.html" beforeDir="false" afterPath="$PROJECT_DIR$/chart3compare/Net_trans.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chart3compare/br_rec.html" beforeDir="false" afterPath="$PROJECT_DIR$/chart3compare/br_rec.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chart3compare/br_trans.html" beforeDir="false" afterPath="$PROJECT_DIR$/chart3compare/br_trans.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chart3compare/cpu.html" beforeDir="false" afterPath="$PROJECT_DIR$/chart3compare/cpu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chart3compare/cur.html" beforeDir="false" afterPath="$PROJECT_DIR$/chart3compare/cur.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chart3compare/generate_chart.py" beforeDir="false" afterPath="$PROJECT_DIR$/chart3compare/generate_chart.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/perTest/CPU_20190228173521.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/perTest/calCPU.py" beforeDir="false" afterPath="$PROJECT_DIR$/perTest/calCPU.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chart3compare/mem.html" beforeDir="false" afterPath="$PROJECT_DIR$/chart3compare/mem.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chart3compare/vol.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -87,27 +91,30 @@
     <session id="-191420227">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="368" />
+          <entry key="py" value="379" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="368" />
+          <entry key="Python" value="379" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="csv" value="3" />
+          <entry key="html" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="HTML" value="1" />
           <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
@@ -130,20 +137,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/perTest/calCPU.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1150">
-              <caret line="149" column="17" selection-start-line="149" selection-start-column="17" selection-end-line="149" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chart/generate_chart.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2116">
-              <caret line="94" column="62" selection-start-line="94" selection-start-column="62" selection-end-line="94" selection-end-column="62" />
-              <folding>
-                <element signature="e#37#53#0" expanded="true" />
-              </folding>
+            <state>
+              <caret column="21" lean-forward="true" selection-start-column="21" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -151,8 +146,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/chart3compare/generate_chart.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-211">
-              <caret line="86" column="8" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
+            <state relative-caret-position="480">
+              <caret line="175" column="64" selection-start-line="175" selection-start-column="64" selection-end-line="175" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -191,9 +186,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="163" />
-    <option name="y" value="73" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="303" />
+    <option name="y" value="164" />
     <option name="width" value="1386" />
     <option name="height" value="788" />
   </component>
@@ -369,15 +364,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="163" y="73" width="1386" height="788" extended-state="1" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4869565" visible="true" weight="0.21735905" />
-      <window_info id="Structure" order="1" sideWeight="0.51304346" side_tool="true" visible="true" weight="0.21735905" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48859936" visible="true" weight="0.15437302" />
+      <window_info id="Structure" order="1" sideWeight="0.51140064" side_tool="true" visible="true" weight="0.15437302" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32924962" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947312" visible="true" weight="0.29555896" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947312" weight="0.20955484" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -395,7 +390,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/Python/Python37-32/Lib/concurrent/futures/_base.py" />
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2and3/threading.pyi">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1771">
@@ -481,16 +475,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chart/generate_chart.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2116">
-          <caret line="94" column="62" selection-start-line="94" selection-start-column="62" selection-end-line="94" selection-end-column="62" />
-          <folding>
-            <element signature="e#37#53#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/perTest/CPU_20190228173521.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -500,17 +484,32 @@
     <entry file="file://$PROJECT_DIR$/perTest/CPU_20190301111732.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/chart/generate_chart.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1637">
+          <caret line="94" column="62" selection-start-line="94" selection-start-column="62" selection-end-line="94" selection-end-column="62" />
+          <folding>
+            <element signature="e#37#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chart3compare/br_rec.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-301239" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/perTest/calCPU.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1150">
-          <caret line="149" column="17" selection-start-line="149" selection-start-column="17" selection-end-line="149" selection-end-column="17" />
+        <state>
+          <caret column="21" lean-forward="true" selection-start-column="21" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chart3compare/generate_chart.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-211">
-          <caret line="86" column="8" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
+        <state relative-caret-position="480">
+          <caret line="175" column="64" selection-start-line="175" selection-start-column="64" selection-end-line="175" selection-end-column="64" />
         </state>
       </provider>
     </entry>

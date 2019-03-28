@@ -176,11 +176,11 @@ if __name__ == "__main__":
     ymMemPath,ymCurPath,ymNetPath,ymVolPath = genPath(ymCpuPath)
     qqMemPath,qqCurPath,qqNetPath,qqVolPath = genPath(qqCpuPath)
     xyMemPath,xyCurPath,xyNetPath,xyVolPath = genPath(xyCpuPath)
-    # cpuChart(ymCpuPath,qqCpuPath,xyCpuPath)
-    # memChart(ymMemPath,qqMemPath,xyMemPath)
-    # curChart(ymCurPath,qqCurPath,xyCurPath)
+    cpuChart(ymCpuPath,qqCpuPath,xyCpuPath)
+    memChart(ymMemPath,qqMemPath,xyMemPath)
+    curChart(ymCurPath,qqCurPath,xyCurPath)
     netChart(ymNetPath,qqNetPath,xyNetPath)
-    # volChart(ymVolPath,qqVolPath,xyVolPath)
+    volChart(ymVolPath,qqVolPath,xyVolPath)
     # filePath = "D:\PycharmProjects\\PT\perTest\CPU_20190202213507.csv"
     # filePath2 = "D:\ChromeDownloads\GW\im.youme.talk.sample\\1.0\\123\CPU_20190125201625.csv"
     # cpuData(filePath)
